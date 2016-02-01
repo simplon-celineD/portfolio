@@ -1,0 +1,370 @@
+*{
+  margin:0;
+  padding:0;
+}
+//les margins et les paddings ne sont pas ajoutés aux tailles définies pour les divs
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  font-family: Geneva, Arial, sans-serif;
+  height: 2050px;
+  /*background-image: url(wallpaper.jpg);*/
+}
+/*header*/
+header{
+  background-color: #0B0B0B;
+  height: 100px;
+  /*margin-left: 40px;*/
+}
+nav{
+  width: 100%;
+  height: 100px;
+  display: inline-block;
+  align-items: center;
+  background-color:rgba(255,255,255,0.4);
+}
+#menu{
+  display: flex;
+  margin-left: 620px;
+  text-align: center;
+}
+#accueil{
+height: 60px;
+width: 120px;
+color: white;
+display: inline-block;
+font-weight: bolder;
+font-size: 15px;
+padding-top: 40px;
+background-color:rgba(88, 123, 211, 1);
+font-family: 'Ubuntu', cursive;
+}
+#accueil:hover{
+  background-color: white;
+  color: #587bd3;
+}
+#me{
+  height: 60px;
+  width: 120px;
+  color: white;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-top: 40px;
+  background-color:rgba(88, 123, 211, 1);
+  font-family: 'Ubuntu', cursive;
+}
+#me:hover{
+  background-color: white;
+  color: #587bd3;
+}
+#menu_competence{
+  height: 60px;
+  width: 180px;
+  color: white;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-top: 40px;
+  background-color:rgba(88, 123, 211, 1);
+  font-family: 'Ubuntu', cursive;
+}
+#menu_competence:hover{
+  background-color: white;
+  color: #587bd3;
+}
+#menu_portfolio{
+  height: 60px;
+  width: 120px;
+  color: white;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 15px;
+  padding-top: 40px;
+  background-color:rgba(88, 123, 211, 1);
+  font-family: 'Ubuntu', cursive;
+}
+#menu_portfolio:hover{
+  background-color: white;
+  color: #587bd3;
+}
+
+/*1er bloc*/
+#un{
+  background-color: #1A1A1A;
+  padding-top: 50px;
+  height: 380px;
+}
+#prenom{
+color:#587bd3;
+font-family: 'Ubuntu', cursive;
+font-size: 80px;
+font-weight:bolder;
+margin-left: 120px;
+}
+#age{
+  color:#7E7E7E;
+  font-family: 'Ubuntu', cursive;
+  font-size: 70px;
+  font-weight: bolder;
+  margin-left: 120px;
+
+}
+#titre{
+  color:white;
+  font-family: 'Ubuntu', cursive;
+  font-size: 70px;
+  font-weight: bolder;
+  margin-left: 120px;
+}
+#junior{
+  color:#464646;
+  font-family: 'Ubuntu', cursive;
+}
+/*2eme bloc : About me et le dev web*/
+#deux{
+  background-color: #1A1A1A;
+  margin-top: 60px;
+  height: 380px;
+}
+#about{
+  width: 580px;
+  height: 100%;
+  display: inline-block;
+  border-right: 4px solid #587bd3;
+}
+#dev{
+  display: inline-block;
+  width: 702px;
+  height: 100%;
+}
+h1{
+  text-align: center;
+  padding-top: 20px;
+  height: 40px;
+  background-color: #587bd3;
+  font-size: 25px;
+  font-family: 'Ubuntu', cursive;
+}
+#description{
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+  font-family: 'Ubuntu', cursive;
+}
+
+/*3ème bloc : compétences et langages*/
+#trois{
+  background-color: #1A1A1A;
+  margin-top: 60px;
+  height: 380px;
+}
+#langage{
+  width: 702px;
+  height: 100%;
+  display: inline-block;
+  border-right: 4px solid #587bd3;
+}
+#competence{
+  display: inline-block;
+  width:580px;
+  height: 100%;
+}
+
+/*portfolio*/
+#more{
+  background-color: #0B0B0B;
+  height: 50px;
+  margin-top: 60px;
+  color: #587bd3;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: 'Ubuntu', cursive;
+}
+#portfolio{
+  background-color: #1A1A1A;
+  height: 455px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#old{
+width: 428px;
+height:226px;
+order: 1;
+/*border-right: 2px solid #587bd3;
+border-bottom: 2px solid #587bd3;*/
+background-image: url(old.png);
+background-repeat: no-repeat;
+background-size:contain;
+background-position: top;
+z-index: 5;
+}
+#acme{
+  width: 428px;
+  height:227px;
+  display: flex;
+  order: 2;
+  /*border-right: 2px solid #587bd3;
+  border-bottom: 2px solid #587bd3;*/
+  background-image: url(acme.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+#airbnbv0{
+  width: 428px;
+  height:226px;
+  display: flex;
+  order:4;
+  align-self: flex-end;
+  /*border-right: 2px solid #587bd3;*/
+  background-image: url(airbnbv0.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+#airbnbv1{
+  width: 428px;
+  height:226px;
+  display: flex;
+  order: 5;
+  align-self: flex-end;
+  /*border-right: 2px solid #587bd3;*/
+  background-image: url(airbnbv1.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+
+#maquette_4{
+  width: 429px;
+  height:226px;
+  display: flex;
+  order: 6;
+  align-self: flex-end;
+  background-image: url(maquette_4.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+#maquette{
+  width: 428px;
+  height:226px;
+  display: flex;
+  order: 3;
+  /*border-bottom: 2px solid #587bd3;*/
+  background-image: url(maquette.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: top;
+}
+
+/*footer*/
+footer{
+  background-color: #464646;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+#fHaut{
+  background-color: #0B0B0B;
+  height: 30px;
+  text-align: center;
+  padding-top: 20px;
+  color: #587bd3;
+  font-size: 13px;
+  font-family: 'Ubuntu', cursive;
+  margin-top: 60px;
+}
+#fHaut:hover{
+  background-color: #587bd3;
+  color: #0B0B0B;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+#retour{
+  width: 410px;
+  height: 100%;
+}
+#lien{
+  display: inline-block;
+}
+#reseau{
+  display: inline-block;
+}
+#reseau img{
+  width: 30px;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 55px;
+}
+#a{
+font-size: 12px;
+font-weight: bolder;
+display: inline-block;
+padding-left: 50px;
+padding-top: 50px;
+color: white;
+}
+#ab{
+  font-size: 12px;
+  font-weight: bolder;
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+}
+#co{
+  font-size: 12px;
+  font-weight: bolder;
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+}
+#port{
+  font-size: 12px;
+  font-weight: bolder;
+  display: inline-block;
+  padding-left: 20px;
+  color: white;
+}
+#contact{
+  width: 410px;
+  height: 100%;
+  padding-left: 20px;
+  color: white;
+}
+#tel img{
+  width: 40px;
+  height: 40px;
+  padding-top: 40px;
+  padding-left: 70px;
+}
+#lettre img{
+  width: 40px;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+#cv{
+  width: 410px;
+  height: 100%;
+}
+#cv img{
+  width: 60px;
+  height: 80px;
+  padding-top: 60px;
+  padding-left: 170px;
+}
+h3{
+  font-size: 14px;
+  display: inline-block;
+  padding-left: 10px;
+}
